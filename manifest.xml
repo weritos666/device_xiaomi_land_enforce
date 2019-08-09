@@ -9,15 +9,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-           <name>android.hardware.bluetooth.audio</name>
-	   <transport>hwbinder</transport>
-	   <version>2.0</version>
-	<interface>
-	   <name>IBluetoothAudioProvidersFactory</name>
-	   <instance>default</instance>
-	</interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
         <version>5.0</version>
@@ -41,6 +32,33 @@
         <version>1.0</version>
         <interface>
             <name>IBluetoothHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.bluetooth_audio</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.btconfigstore</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IBTConfigStore</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -77,9 +95,9 @@
         <fqname>@1.0::ICryptoFactory/default</fqname>
         <fqname>@1.0::IDrmFactory/default</fqname>
         <fqname>@1.2::ICryptoFactory/clearkey</fqname>
-        <fqname>@1.1::ICryptoFactory/widevine</fqname>
+        <fqname>@1.2::ICryptoFactory/widevine</fqname>
         <fqname>@1.2::IDrmFactory/clearkey</fqname>
-        <fqname>@1.1::IDrmFactory/widevine</fqname>
+        <fqname>@1.2::IDrmFactory/widevine</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -122,7 +140,7 @@
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
         <transport arch="32+64">passthrough</transport>
-        <version>2.0</version>
+        <version>2.1</version>
         <interface>
             <name>IMapper</name>
             <instance>default</instance>
@@ -436,16 +454,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.cryptfshw</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICryptfsHw</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ICryptfsHw/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.data.latency</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -611,42 +619,22 @@
             <instance>imsrtpservice</instance>
         </interface>
     </hal>
-     <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IColorEnhancement</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IDisplayModes</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IPictureAdjustment</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IColorEnhancement/default</fqname>
-        <fqname>@2.0::IDisplayModes/default</fqname>
-        <fqname>@2.0::IPictureAdjustment/default</fqname>
-    </hal>
     <hal format="hidl">
-        <name>vendor.lineage.power</name>
+        <name>vendor.qti.hardware.cacert</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ILineagePower</name>
+            <name>IService</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ILineagePower/default</fqname>
     </hal>
+    <!-- cryptfshw HAL service -->
     <hal format="hidl">
-        <name>vendor.qti.hardware.btconfigstore</name>
+        <name>vendor.qti.hardware.cryptfshw</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IBTConfigStore</name>
+            <name>ICryptfsHw</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -657,15 +645,6 @@
         <version>1.0</version>
         <interface>
             <name>IBluetoothSar</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.cacert</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IService</name>
             <instance>default</instance>
         </interface>
     </hal>
