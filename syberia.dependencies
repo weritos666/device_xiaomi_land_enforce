@@ -1,11 +1,11 @@
  [
   {
-    "repository" : "JacobDeepu/proprietary_vendor_xiaomi",
+    "repository" : "Xiaomi-Redmi3S-pie-q/proprietary_vendor_xiaomi-1",
     "target_path": "vendor/xiaomi",
     "branch": "ten"
   },
   {
-    "repository" : "JacobDeepu/android_kernel_xiaomi_msm8937",
+    "repository" : "Xiaomi-Redmi3S-pie-q/android_kernel_xiaomi_msm8937-1",
     "target_path": "kernel/xiaomi/SY",
     "branch": "JDreAm-10"
   },
