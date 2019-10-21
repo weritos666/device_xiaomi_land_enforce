@@ -25,8 +25,8 @@
     <string name="device_kcal_title">Калибрация цвета экрана</string>
 
     <!-- Ambient Display -->
-    <string name="ambient_display_xiaomi">Дозе Xiaomi</string>
-    <string name="advanced_doze_summary">Ambient экран</string>
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Ambient дисплей</string>
 
     <string name="vibration_title">Вибрация</string>
     <string name="vibration_strength_title">Сила</string>
@@ -34,15 +34,15 @@
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">Производительность</string>
     <string name="thermal_title">Настройки производительности</string>
-    <string name="thermal_summary">Выберите Ваш профил производительности</string>
-    <string name="thermal_dialogTitle">Выберите Ваш профил производительности</string>
+    <string name="thermal_summary">Выберите Ваш профиль производительности</string>
+    <string name="thermal_dialogTitle">Выберите Ваш профиль производительности</string>
 
     <!-- Values for Thermal Presets -->
     <string name="thermal_performance">Производительность</string>
     <string name="thermal_battery">Энергосбережение</string>
     <string name="thermal_gaming">Игры</string>
     <string name="thermal_balance">Баланс</string>
-    <string name="thermal_extreme_battery">Экстримное энергосбережение</string>
+    <string name="thermal_extreme_battery">Экстримальное энергосбережение</string>
 
     <!-- FP Actions -->
 
@@ -51,8 +51,8 @@
     <string name="audio_title">Аудио</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_title">Mi Оптимизатор звука</string>
-    <string name="dirac_summary">Oтимизирует качество звучания</string>
+    <string name="dirac_title">Улучшение звука MI</string>
+    <string name="dirac_summary">Улучшает качество звучания</string>
     <string name="dirac_headset_title">Выберите тип наушников</string>
     <string name="dirac_preset_title">Выберите пресет</string>
 
@@ -96,9 +96,9 @@
     <!-- Audio amplification -->
 
     <!-- kcal -->
-    <string name="advanced_settings_kcal">Калибрация цвета экрана</string>
+    <string name="advanced_settings_kcal">Калибровать цвета экрана</string>
     <string name="cat_colormanagement">Настройки цвета</string>
-    <string name="cat_calibration">Калибрация экрана</string>
+    <string name="cat_calibration">Калибровка экрана</string>
 
     <string name="kcal_enabled">Включено</string>
     <string name="kcal_disabled">Выключено</string>
