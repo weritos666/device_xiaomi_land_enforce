@@ -36,7 +36,9 @@
          Zone N:        array[N - 1] <= LUX < array[N]
          Zone N  1     array[N] <= LUX < infinity
          Must be overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessLevels">
+ <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>2</item>
         <item>3</item>
         <item>4</item>
         <item>8</item>
@@ -66,11 +68,12 @@
          This array should have size one greater than the size of the config_autoBrightnessLevels
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
-    <array name="config_autoBrightnessDisplayValuesNits">
-        <item>10.9800</item>  <!-- 0-3 -->
-        <item>13.2500</item>  <!-- 3-4 -->
-        <item>38.786167</item>  <!-- 4-6 -->
-        <item>43.30993</item>  <!-- 6-8 -->
+ <array name="config_autoBrightnessDisplayValuesNits">
+        <item>3.3431</item>  <!-- 0-1 -->
+        <item>7.702998</item>  <!-- 1-2 -->
+        <item>15.45935</item>  <!-- 2-3 -->
+        <item>38.786167</item>  <!-- 3-4 -->
+        <item>43.30993</item>  <!-- 4-8 -->
         <item>55.90478</item>  <!-- 8-12 -->
         <item>61.334614</item>  <!-- 12-20 -->
         <item>68.4388</item>  <!-- 20-33 -->
@@ -90,7 +93,7 @@
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
-    <integer-array name="config_screenBrightnessBacklight">
+  <integer-array name="config_screenBrightnessBacklight">
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -166,7 +169,7 @@
          Note that this value should *not* reflect the maximum brightness value for any high
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
          This array should be equal in size to config_screenBrightnessBacklight -->
-    <array name="config_screenBrightnessNits">
+  <array name="config_screenBrightnessNits">
         <item>2.685</item>
         <item>3.343</item>
         <item>4.13</item>
