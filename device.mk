@@ -139,7 +139,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor \
     camera.msm8937 \
-    Snap
+    Gcam
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -437,6 +437,10 @@ PRODUCT_PACKAGES += \
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk-sp
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2019
 
 # WiFi
 PRODUCT_PACKAGES += \
