@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Display calibration
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service.xiaomi
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8937 \
@@ -453,6 +457,10 @@ PRODUCT_PACKAGES += \
 # Wallpapers
 PRODUCT_PACKAGES += \
     WallpapersBReel2019
+
+# Vold
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-lineage
 
 # WiFi
 PRODUCT_PACKAGES += \

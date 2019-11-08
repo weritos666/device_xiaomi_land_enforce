@@ -478,6 +478,16 @@
         <fqname>@1.0::IAlarm/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.cryptfshw</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICryptfsHw</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ICryptfsHw/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.data.latency</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -669,5 +679,35 @@
             <instance>imsrtpservice</instance>
         </interface>
         <fqname>@1.0::IRTPService/imsrtpservice</fqname>
+    </hal>
+     <hal format="hidl">
+        <name>vendor.lineage.livedisplay</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IColorEnhancement</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::IColorEnhancement/default</fqname>
+        <fqname>@2.0::IDisplayModes/default</fqname>
+        <fqname>@2.0::IPictureAdjustment/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.power</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ILineagePower</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ILineagePower/default</fqname>
     </hal>
 </manifest>
