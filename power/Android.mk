@@ -13,8 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(TARGET_DEVICE),land)
-
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(call is-vendor-board-platform,QCOM),true)
@@ -80,6 +78,7 @@ LOCAL_MODULE := android.hardware.power@1.1-service.custom
 LOCAL_INIT_RC := android.hardware.power@1.1-service.custom.rc
 LOCAL_SHARED_LIBRARIES += android.hardware.power@1.1
 
+LOCAL_SHARED_LIBRARIES += vendor.lineage.power@1.0
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := qcom
 LOCAL_VENDOR_MODULE := true
@@ -88,4 +87,3 @@ include $(BUILD_EXECUTABLE)
 
 endif
 
-endif

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+ 
 #define LOG_TAG "android.hardware.power@1.1-service.custom"
 
 // #define LOG_NDEBUG 0
@@ -33,13 +33,12 @@ using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
 // Generated HIDL files
-using android::hardware::power::V1_1::IPower;
 using android::hardware::power::V1_1::implementation::Power;
 
 int main() {
 
     status_t status;
-    android::sp<IPower> service = nullptr;
+    android::sp<Power> service = nullptr;
 
     ALOGI("Power HAL Service 1.1 for QCOM is starting.");
 
@@ -52,7 +51,7 @@ int main() {
 
     configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    status = service->registerAsService();
+    status = service->registerAsSystemService();
     if (status != OK) {
         ALOGE("Could not register service for Power HAL Iface (%d).", status);
         goto shutdown;
