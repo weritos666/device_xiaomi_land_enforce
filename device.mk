@@ -181,6 +181,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
    XiaomiParts
 
+# XiaomiDoze
+PRODUCT_PACKAGES += \
+   XiaomiDoze
+
 # Updater
 PRODUCT_PACKAGES += \
     Updates
