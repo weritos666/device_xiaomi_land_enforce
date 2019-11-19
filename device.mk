@@ -17,7 +17,8 @@
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
@@ -192,14 +193,6 @@ PRODUCT_PACKAGES += \
 # Updater
 PRODUCT_PACKAGES += \
     Updates
-
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
-# XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -458,9 +451,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WallpapersBReel2019
 
-# Vold
+# CryptfsHW
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-lineage
+    vendor.qti.hardware.cryptfshw@1.0-service-qti
 
 # WiFi
 PRODUCT_PACKAGES += \
