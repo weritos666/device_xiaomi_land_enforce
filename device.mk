@@ -452,7 +452,7 @@ PRODUCT_PACKAGES += \
 
 # CryptfsHW
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # WiFi
 PRODUCT_PACKAGES += \
