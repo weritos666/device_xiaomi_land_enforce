@@ -234,7 +234,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 TARGET_RECOVERY_FSTAB 		 := $(DEVICE_PATH)/rootdir/fstab.qcom
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-tmp
 
