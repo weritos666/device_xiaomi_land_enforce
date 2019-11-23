@@ -11,10 +11,36 @@ on enable-low-power
     start qcom-post-boot
 
     # Set Scaling Frequency
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1344000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1497000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 422400
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 1094400
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 1209000
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 345600
+
+    # enable governor
+    write /sys/devices/system/cpu/cpu0/online 1
+
+    # CPU values
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 422400
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1497000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpufreq/schedutil/iowait_boost_enable 0
+
+    # set default schedTune value for foreground/top-app (only affects EAS)
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 0
+    write /dev/stune/rt/schedtune.prefer_idle 1
+    write /dev/stune/rt/schedtune.boost 0
+
+    # Enable input boost configuration
+   # write /sys/module/cpu_boost/parameters/input_boost_freq "0:1036800"
+    write /sys/module/cpu_boost/parameters/dynamic_stune_boost 1
+    write /sys/module/cpu_boost/parameters/input_boost_ms 100
+
+    # Fsync 
+    write /sys/module/sync/parameters/fsync_enabled Y
 
     # Enable power efficient workqueue
     write /sys/module/workqueue/parameters/power_efficient Y
@@ -53,4 +79,4 @@ on property:init.svc.recovery=running
 
 on property:sys.boot_completed=1
     trigger enable-low-power
-    setprop sys.io.scheduler bfq
+    setprop sys.io.scheduler cfq
