@@ -1,6 +1,13 @@
+add_hwservice( init, hal_camera_hwservice);
 allow init { domain -lmkd -crash_dump }:process noatsecure;
+allow init sysfs:file setattr;
 allow init system_data_file:sock_file write;
 allow init system_server:fd use;
 allow init system_server:unix_stream_socket { read write };
 allow init adsprpcd_file:filesystem { mount relabelfrom relabelto };
-allow init sysfs:file setattr;
+allow init sysfs_leds:lnk_file { read write open };
+allow init vendor_file:file { execute execute_no_trans };
+allow init same_process_hal_file:file execute;
+allow init hwservicemanager:binder  { transfer call }; 
+allow init hwservicemanager:dir { search };
+allow init hal_power_hwservice:hwservice_manager add;
