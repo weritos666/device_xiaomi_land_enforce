@@ -1,0 +1,1 @@
+allow system_app sysfs:file { open write read getattr };
