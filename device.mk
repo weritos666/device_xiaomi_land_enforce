@@ -253,7 +253,7 @@ PRODUCT_COPY_FILES += \
 
 # HW crypto
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+    vendor.qti.hardware.cryptfshw@1.0-service-ioctl-qti
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -373,7 +373,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-	android.hardware.power@1.2-service-qti
+   android.hardware.power@1.2-service-qti
 
 #Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
