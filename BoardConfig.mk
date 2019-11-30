@@ -236,7 +236,7 @@ TARGET_RECOVERY_FSTAB 		 := $(DEVICE_PATH)/rootdir/fstab.qcom
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_PLAT_VENDOR_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/vendor
 
 #Treble
 ENABLE_VENDOR_IMAGE := true
