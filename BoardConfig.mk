@@ -47,7 +47,6 @@ TARGET_NO_BOOTLOADER 		:= true
 # kernel
 BOARD_KERNEL_BASE		:= 0x80000000
 BOARD_KERNEL_CMDLINE 		:= androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000 loop.max_part=7
-BOARD_KERNEL_CMDLINE 		+= androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME 	:= Image.gz-dtb
 BOARD_KERNEL_PAGESIZE 		:=  2048
 BOARD_MKBOOTIMG_ARGS 		:= --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
@@ -234,9 +233,10 @@ TARGET_USES_OLD_MNC_FORMAT := true
 TARGET_RECOVERY_FSTAB 		 := $(DEVICE_PATH)/rootdir/fstab.qcom
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-tmp
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 #Treble
 ENABLE_VENDOR_IMAGE := true
