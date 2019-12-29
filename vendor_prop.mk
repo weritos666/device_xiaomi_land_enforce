@@ -134,9 +134,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.msm8956hw=0 \
-    mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true \
-    media.aac_51_output_enabled=true \
     vendor.mm.enable.qcom_parser=1048575 \
     vendor.vidc.enc.narrow.searchrange=1 \
     vendor.vidc.disable.split.mode=1 \
