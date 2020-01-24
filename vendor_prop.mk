@@ -84,6 +84,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=1 \
     vendor.display.disable_skip_validate=1 \
+    sys.display-size=1920x1080 \
     persist.debug.wfd.enable=1 \
     persist.hwc.enable_vds=1 \
     debug.sdm.support_writeback=0
@@ -141,6 +142,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.narrow.searchrange=1 \
     vendor.vidc.disable.split.mode=1 \
     vendor.video.disable.ubwc=1 \
+    mm.sec.enable.smoothstreaming=true \
     media.settings.xml=/vendor/etc/media_profiles_V1_0.xml
 
 # Netmgrd
