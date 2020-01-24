@@ -89,6 +89,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.enable_vds=1 \
     debug.sdm.support_writeback=0
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.location.osnlp.package=com.google.android.gms \
+    ro.location.osnlp.region.package=""
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
