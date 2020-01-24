@@ -203,6 +203,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     ril.subscription.types=NV,RUIM \
+    persist.vendor.data.mode=concurrent \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     rild.libargs=-d/dev/smd0 \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.telephony.call_ring.multiple=false \
@@ -233,3 +235,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1
+
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_smart_90_for_video=true
+ro.surface_flinger.set_display_power_timer_ms=10000
+ro.surface_flinger.set_touch_timer_ms=5000
+ro.surface_flinger.set_idle_timer_ms=9000
