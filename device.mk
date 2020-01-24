@@ -184,7 +184,7 @@ PRODUCT_PACKAGES += \
 
 # Updater
 PRODUCT_PACKAGES += \
-    Updates
+    Updater
 
 # DRM
 PRODUCT_PACKAGES += \
