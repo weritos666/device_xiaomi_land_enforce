@@ -187,9 +187,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    XiaomiDoze
 
-# Updater
+# Updates
 PRODUCT_PACKAGES += \
-    Updater
+    Updates
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -357,6 +357,9 @@ PRODUCT_PACKAGES += \
 
 #Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ion.maintainer=weritos
 
 # RCS
 PRODUCT_PACKAGES += \

@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_land.mk
+    $(LOCAL_DIR)/ion_land.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_land-user \
-    syberia_land-userdebug \
-    syberia_land-eng
+    ion_land-user \
+    ion_land-userdebug \
+    ion_land-eng
