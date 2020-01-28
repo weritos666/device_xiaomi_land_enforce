@@ -31,7 +31,7 @@
 
     <!-- Sound Search tile -->
     <string name="quick_settings_sound_search">Поиск музыки</string>
-    <string name="quick_settings_sound_search_no_app">Извините, но это не сработает, если у вас нет приложения для поиска звука.</string></string>
+    <string name="quick_settings_sound_search_no_app">Извините, но это не сработает, если у вас нет приложения для поиска звука.</string>
 
     <!-- USB Tethering tile -->
     <string name="accessibility_quick_settings_usb_tether_off">USB-модем отключен</string>
@@ -172,8 +172,8 @@
     <!-- Kill button in notification guts -->
     <string name="force_stop_dlg_title">Принудительная остановка?</string>
     <string name="force_stop_dlg_text">Если вы принудительно остановите приложение, оно может плохо себя вести.</string>
-    <string name="dlg_ok">@android:string/Ок</string>
-    <string name="dlg_cancel">@android:string/отмена</string>
+    <string name="dlg_ok">Ок</string>
+    <string name="dlg_cancel">отмена</string>
     <string name="guts_force_close_app">Закрыть приложение</string>
 
     <!-- Heads up snooze toast -->
