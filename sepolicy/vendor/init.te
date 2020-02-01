@@ -19,3 +19,5 @@ allow init diag_device:chr_file rw_file_perms;
 allow init init:netlink_route_socket { read write };
 allow init netutils_wrapper_exec:file x_file_perms;
 allow init hal_perf_hwservice:hwservice_manager find;
+allow init sysfs_battery_supply:file setattr;
+allow init hal_perf_default:binder call;
