@@ -280,4 +280,8 @@
     <string name="vibration_intensity_ringer">Интенсивность вибрации рингтона</string>
     <string name="vibration_intensity_notification">Интенсивность вибрации уведомлений</string>
     <string name="vibration_intensity_haptic">Интенсивность вибрации обратной связи</string>
+
+    <!-- Gestures: Touchscreen gestures -->
+    <string name="touchscreen_gesture_settings_title">Жесты сенсорного экрана</string>
+    <string name="touchscreen_gesture_settings_summary">Выполнение различных жестов сенсорного экрана для быстрых действий</string>
 </resources>
