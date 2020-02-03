@@ -43,6 +43,11 @@ on property:ro.product.wt.boardid=S88537AA1
     setprop ro.boot.fpsensor gdx
     start vendor.fps_hal
 
+service goodix_script /vendor/bin/init.goodix.sh
+    class late_start
+    user root
+    oneshot
+
 on property:persist.sys.fp.vendor=none
     stop vendor.gx_fpd
     setprop persist.sys.fp.goodix 0
