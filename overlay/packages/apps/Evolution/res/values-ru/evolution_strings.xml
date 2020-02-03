@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="evolution_settings_title">Доп. настройки</string>
+    <string name="evolution_settings_title">Evolution X</string>
     <!-- Categories -->
     <string name="aosp_gesture_title">Стандартные жесты AOSP</string>
     <string name="animation_title">Анимации</string>
@@ -84,7 +84,6 @@
     <string name="seekbar_default_string">По умолчанию</string>
     <!-- Lockscreen information -->
     <string name="lockscreen_info_title">Элементы под часами</string>
-    <string name="lockscreen_info_category_title">Информация на экране блокировки</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_category_title">Параметры слайдера яркости</string>
     <string name="qs_show_brightness_title">Ползунок яркости</string>
@@ -931,7 +930,6 @@
     <string name="lockscreen_clock_sammy_bold">Sammy (bold)</string>
     <string name="lockscreen_clock_sammy_accent_hour">Sammy (accent hour)</string>
     <string name="lockscreen_clock_sammy_accent_min">Sammy (accent minute)</string>
-
     <!-- Lockscreen Date styles -->
     <string name="lockscreen_date_selection_title">Стиль даты</string>
     <string name="lockscreen_date_dialog_title">Выберите стиль даты</string>
@@ -944,4 +942,11 @@
     <string name="lockscreen_date_selection_str_gradient">Gradient</string>
     <string name="lockscreen_date_selection_str_border_accent">Dark with accented borders</string>
     <string name="lockscreen_date_selection_str_border_gradient">Dark with gradient borders</string>
+    <!-- QS blur -->
+    <string name="blur_quicksettings_title">Размытие за быстрыми настройками (бета)</string>
+    <string name="blur_quicksettings_summary">Размывает затемненный фон за быстрыми настройками</string>
+    <string name="qs_blur_alpha_title">Размытие альфа</string>
+    <string name="qs_blur_alpha_summary">Устанавливает прозрачность размытия</string>
+    <string name="qs_blur_intensity_title">Интенсивность размытия</string>
+    <string name="qs_blur_intensity_summary">Устанавливает интенсивность размытия / радиус</string>
 </resources>

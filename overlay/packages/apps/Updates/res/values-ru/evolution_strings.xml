@@ -68,14 +68,14 @@
     <!-- Actions -->
     <string name="action_download">Загрузить</string>
     <string name="action_pause">Пауза</string>
-    <string name="action_resume">Резюме</string>
+    <string name="action_resume">Старт</string>
     <string name="action_install">Установить</string>
     <string name="action_delete">Удалить</string>
     <string name="action_cancel">Отмена</string>
     <string name="confirm_delete_dialog_title">Удалить файл</string>
     <string name="confirm_delete_dialog_message">Удалить выбранный файл обновления?</string>
     <string name="pause_button">Пауза</string>
-    <string name="resume_button">Резюме</string>
+    <string name="resume_button">Старт</string>
     <string name="suspend_button">Приостановить</string>
     <string name="reboot">Перезагрузка</string>
     <string name="details_button">Просмотр сведений</string>
@@ -121,7 +121,7 @@
     <string name="menu_mobile_data_warning">Предупреждение о мобильных данных</string>
 
     <!-- Info section -->
-    <string name="extras_category_title">Доп. функции</string>
+    <string name="extras_category_title">Расширенная информация</string>
     <string name="developer_info_title">Ведущий разработчик</string>
     <string name="developer_info_summary" translatable="false">Joey Huab</string>
     <string name="maintainer_info_title">Сопровождающий устройства</string>

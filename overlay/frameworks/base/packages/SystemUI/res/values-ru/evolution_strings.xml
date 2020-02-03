@@ -31,7 +31,7 @@
 
     <!-- Sound Search tile -->
     <string name="quick_settings_sound_search">Поиск музыки</string>
-    <string name="quick_settings_sound_search_no_app">Извините, но это не сработает, если у вас нет приложения для поиска звука.</string></string>
+    <string name="quick_settings_sound_search_no_app">Извините, но это не сработает, если у вас нет приложения для поиска звука.</string>
 
     <!-- USB Tethering tile -->
     <string name="accessibility_quick_settings_usb_tether_off">USB-модем отключен</string>
@@ -125,10 +125,10 @@
     <string name="accessibility_quick_settings_location_high_accuracy">Отчет о местоположении: режим высокой точности.</string>
 
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
-    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash зарядка (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> until full)</string>
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Быстрая зарядка (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> осталось)</string>
 
     <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
-    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Warp зарядка (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> until full)</string>
+    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Супер зарядка (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> осталось)</string>
 
     <!-- Reader mode QS tile -->
     <string name="quick_settings_reading_mode">Режим чтения</string>
@@ -146,9 +146,9 @@
     <string name="custom_hint">Проведите от значка для запуска</string>
 
     <!-- HW Keys Tile -->
-    <string name="accessibility_quick_settings_hwkeys_on">HW keys on</string>
-    <string name="accessibility_quick_settings_hwkeys_off">HW keys off</string>
-    <string name="quick_settings_hwkeys_label">HW keys</string>
+    <string name="accessibility_quick_settings_hwkeys_on">Включено</string>
+    <string name="accessibility_quick_settings_hwkeys_off">Выключено</string>
+    <string name="quick_settings_hwkeys_label">Харверные кнопки</string>
 
     <!-- Gaming Mode -->
     <string name="gaming_mode_tile_title">Режим игры</string>
@@ -172,8 +172,6 @@
     <!-- Kill button in notification guts -->
     <string name="force_stop_dlg_title">Принудительная остановка?</string>
     <string name="force_stop_dlg_text">Если вы принудительно остановите приложение, оно может плохо себя вести.</string>
-    <string name="dlg_ok">@android:string/Ок</string>
-    <string name="dlg_cancel">@android:string/отмена</string>
     <string name="guts_force_close_app">Закрыть приложение</string>
 
     <!-- Heads up snooze toast -->
@@ -234,4 +232,5 @@
     <string name="right">Вправо</string>
     <string name="navbar_editor_title">Редактор</string>
     <string name="navbar_editor_summary">Настроить панель навигации</string>
+
 </resources>
