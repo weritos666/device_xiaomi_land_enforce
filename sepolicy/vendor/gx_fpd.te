@@ -43,3 +43,4 @@ allow gx_fpd default_android_service:service_manager find;
 add_service(gx_fpd, gx_fpd_service);
 
 allow gx_fpd gx_fpd:capability { dac_override };
+allow gx_fpd init:binder { transfer call };
