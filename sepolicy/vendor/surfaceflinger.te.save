@@ -1,1 +1,0 @@
-cameraserver.te           hal_health_default.te              misc_writer_sys.te    system_app.teallow surfaceflinger sysfs_kgsl:lnk_file { write read open };
