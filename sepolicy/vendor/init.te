@@ -28,3 +28,4 @@ allow init netutils_wrapper_exec:file rw_file_perms;
 allow init init:netlink_route_socket { create bind nlmsg_read };
 allow init gx_fpd:binder { transfer call };
 allow init system_server:binder { transfer call };
+
