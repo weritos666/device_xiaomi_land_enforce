@@ -27,6 +27,14 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+boardid=`getprop ro.product.wt.boardid`
+if [ "$boardid" == "S88537AA1" ]; then
+    setprop persist.sys.fp.vendor goodix
+else
+    setprop persist.sys.fp.vendor searchf
+fi
+
 if [ ! -f /data/system/users/0/settings_fingerprint.xml ]; then
     rm -rf /persist/data/gxfp/0_0
 fi
+
