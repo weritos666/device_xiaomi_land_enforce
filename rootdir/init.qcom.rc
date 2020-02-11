@@ -1030,6 +1030,11 @@ service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.andro
     oneshot
     keycodes 114 115 116
 
+service goodix_script /vendor/bin/init.goodix.sh
+    class late_start
+    user root
+    oneshot
+
 #Set GPU Opengles version
 on property:vendor.opengles.version=*
     setprop ro.opengles.version ${vendor.opengles.version}
