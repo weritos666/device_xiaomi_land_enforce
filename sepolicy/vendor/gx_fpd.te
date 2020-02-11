@@ -65,3 +65,4 @@ allow gx_fpd default_android_service:service_manager find;
 allow gx_fpd gx_fpd:capability dac_override;
 
 add_service(gx_fpd, gx_fpd_service);
+allow gx_fpd hal_fingerprint_land:binder { transfer call };
